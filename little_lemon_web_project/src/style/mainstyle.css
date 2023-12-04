@@ -1,0 +1,178 @@
+.Herosection{
+	display: grid;
+	grid-template-columns: repeat(2,40em);
+	grid-gap: 2em;
+}
+
+.Herosection {
+	background-color: #495E57;
+	width: 1350px;
+	height: 350px;
+	position: relative;
+}
+
+.Hero-text {
+	padding-left: 15em;
+}
+
+.Hero-text h2{
+	color: white;
+}
+
+.Hero-text p{
+	color: white;
+}
+
+.Little-lemon{
+	color: #F4CE14;
+}
+
+.Hero-image {
+	right: 15em;
+	top: 2em;
+	position: absolute;
+}
+
+.Hero-image img{
+	border-radius: 16px;
+}
+
+.Hero-btn button{
+	border-radius: 16px;
+	border-style: none;
+	width: 180px;
+	height: 43px;
+	margin-top: 2em;
+	background-color: #F4CE14;
+}
+
+.Reserve-table{
+	color: black;
+	font-weight: bold;
+}
+
+.Week-Specialty{
+	padding-left: 15em;
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+.Specialty-header{
+	display: inline-flex;
+	align-items: flex-start;
+}
+
+.Specialty-header h1{
+	font-weight: normal;
+}
+
+.Specialty-header button{
+	margin-left: 30em;
+	border-radius: 16px;
+	border-style: none;
+	width: 180px;
+	height: 43px;
+	margin-top: 1em;
+	background-color: #F4CE14;
+}
+
+.Online-btn{
+	color: black;
+	font-weight: bold;
+}
+
+.displayed-food{
+	display: grid;
+	grid-template-columns: repeat(3, 17em);
+	grid-gap: 3em;
+	padding-top: 1em;
+}
+
+.displayed-food img{
+	border-radius: 8px;
+}
+
+.GreekSalad{
+	border-radius: 8px;
+	background-color: #E9E5E5;
+	width: 267px;
+	height: 460px;
+}
+
+.Bruchetta{
+	border-radius: 8px;
+	background-color: #E9E5E5;
+	width: 267px;
+	height: 460px;
+}
+
+.LemonDessert{
+	border-radius: 8px;
+	background-color: #E9E5E5;
+	width: 267px;
+	height: 460px;
+}
+
+.food-header{
+	display: flex;
+	font-size: 16px;
+}
+
+.food-header h1{
+	padding-right: 3em;
+}
+
+.food-text{
+	padding: 10px;
+}
+
+.testimonials{
+	padding: 40px 10px;
+	text-align: center;
+	background-color: #495E57;
+}
+
+.inner{
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+.border{
+	width: 160px;
+	height: 5px;
+	background: #F4CE14;
+	margin: 26px auto
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.col{
+	flex: 33.33%;
+	max-width: 23.33%;
+	box-sizing: border-box ;
+	padding: 15px;
+}
+
+.testimonial{
+	background: #ffff;
+	padding: 30px;
+}
+
+.testimonial img{
+	border-radius: 50px;
+}
+
+.name{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.stars{
+	color: #6ab04c;	margin-top: 20px;
+}

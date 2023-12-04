@@ -1,8 +1,12 @@
-const Header = () => {
+import "../style/navstyle.css"
+
+
+
+const Nav = () => {
 
 	return(
-		<nav>
-			<img src="Image/logo2.jpg" alt="web Logo" width="223" height="61"/>
+		<nav className="nav-bar">
+			<img src={require("../Images/logo1.jpg")} alt="web Logo" width="223px" />
 			<ul>
 				<li><a href="/home">HOME</a></li>
 				<li><a href="/about">ABOUT</a></li>
@@ -14,3 +18,5 @@ const Header = () => {
 		</nav>
 	)
 }
+
+export default Nav;
