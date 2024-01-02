@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faStar } from '@fortawesome/free-regular-svg-icons';
+//import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 import "../style/mainstyle.css";
 
 
@@ -94,94 +96,73 @@ const Main = () => {
 					<div className="row">
 						<div className="col">
 							<div className="testimonial">
-								<img src={require("../Images/image4.jpg")} alt='testimonial' width="100" height="100" />
+								<img src={require("../Images/Man pic.jpg")} alt='testimonial' width="100" height="100" />
 								<div className="name">Testimonial one</div>
 								<div className="stars">
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
 								</div>
 								<p>
-									A very nice restaurant.
+									A very nice food, Love it.
 								</p>
 							</div>
 						</div>
 
 						<div className="col">
 							<div className="testimonial">
-								<img src={require("../Images/image5.jpg")} alt='testimonial' width="100" height="100" />
+								<img src={require("../Images/Lady1.jpg")} alt='testimonial' width="100" height="100" />
 								<div className="name">Testimonial Two</div>
 								<div className="stars">
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={regularStar}/>
 								</div>
 								<p>
-									A very nice restauran.
+									A very nice restaurant, I would love dine here again.
 								</p>
 							</div>
 						</div>
 
 						<div className="col">
 							<div className="testimonial">
-								<img src={require("../Images/image10.jpg")} alt='testimonial' width="100" height="100" />
+								<img src={require("../Images/asian-handsome-man-with-a-mustache-smiling-on-white-background-free-photo.jpg")} alt='testimonial' width="100" height="100" />
 								<div className="name">Testimonial Three</div>
 								<div className="stars">
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-								</div>
-								<p>
-									A very nice restauran.
-								</p>
-							</div>
-						</div>
-
-						<div className="col">
-							<div className="testimonial">
-								<img src={require("../Images/image10.jpg")} alt='testimonial' width="100" height="100" />
-								<div className="name">Testimonial Four</div>
-								<div className="stars">
-									<FontAwesomeIcon icon={"fa-solid fa-star"}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
-									<FontAwesomeIcon icon={ faStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
 								</div>
 								<p>
 									A very nice restaurant.
+								</p>
+							</div>
+						</div>
+
+						<div className="col">
+							<div className="testimonial">
+								<img src={require("../Images/Lady2.jpg")} alt='testimonial' width="100" height="100" />
+								<div className="name">Testimonial Four</div>
+								<div className="stars">
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+									<FontAwesomeIcon icon={solidStar}/>
+								</div>
+								<p>
+									An excellent meal.
 								</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			<section>
-					<div className="AboutUs">
-						<div>
-							<h1>Little Lemon</h1>
-							<h2>Chicago</h2>
-							<p>Amet minim mollit non
-							deserunt ullamco est sit
-							aliqua dolor do amet sint. Velit officia consequat
-							duis enim velit mollit. Exercitation veniam consequat
-							sunt nostrud amet.Amet minim mollit non deserunt ullamco
-							est sit aliqua dolor do amet sint. Velit officia consequat
-							duis enim velit mollit. </p>
-						</div>
-						<div>
-							<img src="" alt="about us img" width="235" height="296" />
-						</div>
-						<div>
-							<img src="" alt="about us img" width="235" height="296" />
-						</div>
-					</div>
 			</section>
 		</main>
 	)

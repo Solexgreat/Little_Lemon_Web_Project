@@ -1,25 +1,45 @@
+import "../style/footer.css"
+
+
 const Footer = () => {
 
 	return(
 		<footer>
-			<img src="" alt="footer img" width="163" height="256"/>
-			<ul>
-				<li><a href="/home">HOME</a></li>
-				<li><a href="/about">ABOUT</a></li>
-				<li><a href="/menu">MENU</a></li>
-				<li><a href="/reservation">RESERVATION</a></li>
-				<li><a href="/online order">ONLINE ORDER</a></li>
-				<li><a href="/login">LOGIN</a></li>
-			</ul>
-			<ul>
-				<li>Phone number</li>
-				<li>Email</li>
-			</ul>
-			<ul>
-				<li><a>Facebook</a></li>
-				<li><a>Instagrame</a></li>
-			</ul>
+			<div className="footer">
+				<div className="footer-row">
+					<div className="footer-Img">
+						<img src={require("../Images/image2.jpg")} alt="footer img" width="163" height="256"/>
+					</div>
 
+					<div className="footer-Nav">
+						<ul>
+							<h2>Dormant Navigation</h2>
+							<li><a href="/home">Home</a></li>
+							<li><a href="/about">About</a></li>
+							<li><a href="/menu">Menu</a></li>
+							<li><a href="/reservation">Reservation</a></li>
+							<li><a href="/online order">Online Order</a></li>
+							<li><a href="/login">Login</a></li>
+						</ul>
+					</div>
+
+					<div className="Contact">
+						<ul>
+						<h2>Contact</h2>
+							<li>Phone number</li>
+							<li>Email</li>
+						</ul>
+					</div>
+
+					<div className="Socialmedia">
+						<ul>
+						<h2>Socialmedia Link</h2>
+							<li><a>Facebook</a></li>
+							<li><a>Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</footer>
 	)
 }

@@ -1,0 +1,67 @@
+.footer {
+	padding: 40px 0;
+	background-color: #495E57;
+}
+
+.footer-row {
+	display: grid;
+	max-width: 1200px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 2em;
+	margin: auto;
+	overflow: hidden;
+}
+
+.Contact h2 {
+	font-size: 16px;
+}
+
+.Contact ul {
+	list-style: none;
+}
+
+.Contact li{
+	padding-bottom: 1em;
+}
+
+.Contact a{
+	text-decoration: none;
+	color: black;
+	font-style: inherit;
+}
+
+.footer-Nav h2{
+	font-size: 16px;
+}
+
+.footer-Nav ul{
+	list-style: none;
+}
+
+.footer-Nav li{
+	padding-bottom: 1em;
+}
+
+.footer-Nav a {
+	text-decoration: none;
+	color: black;
+	font-style: inherit;
+}
+
+.Socialmedia h2{
+	font-size: 16px;
+}
+
+.Socialmedia ul{
+	list-style: none;
+}
+
+.Socialmedia li{
+	padding-bottom: 1em;
+}
+
+.Socialmedia a {
+	text-decoration: none;
+	color: black;
+	font-style: inherit;
+}

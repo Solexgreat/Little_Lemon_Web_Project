@@ -1,0 +1,37 @@
+.AboutUs{
+	padding: 40px 0px;
+	text-align: center;
+	background-color: white;
+}
+
+
+.About-row{
+	display: grid;
+	grid-template-columns: repeat(2, 12.5em);
+	grid-gap: 7em;
+	justify-content: center;
+}
+
+.textbox{
+	text-align: left;
+}
+
+.About-col-img{
+	position: relative;
+	width: 250px;
+	height: 350px;
+}
+
+.owner1{
+	position: absolute;
+	bottom: 0em;
+	z-index: 10;
+}
+
+.owner2{
+	position: absolute;
+	bottom: 4em;
+	left: 8em;
+	z-index: 9;
+}
+
