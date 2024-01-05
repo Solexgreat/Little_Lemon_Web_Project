@@ -12,7 +12,7 @@ const Header = () => {
 		<header className="Herosection">
 			<section>
 				{/* banner text */}
-				<div className="Hero-text" >
+				<div className="banner" >
 					<h2 className="Little-lemon">Little Lemon</h2>
 					<h3>Chicago</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur<br/>
