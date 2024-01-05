@@ -1,4 +1,5 @@
 import '../style/header.css'
+import {Link} from "react-router"
 
 const Header = () => {
 
@@ -19,7 +20,7 @@ const Header = () => {
 					adipiscing elit, sed do eiusmod tempor<br/>
 					incididunt ut labore et dolore magna<br/>aliqua.</p>
 					<div>
-						<link to='/booking'><button >Reserve a table</button></link>
+						<Link to='/booking'><button >Reserve a table</button></Link>
 					</div>
 				</div>
 				<div className="Hero-image">
