@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <Body>
-        <Header/>
         <Nav/>
-        <Main/>
+        <Header/>
+        {/* <Main/>
         <About/>
-        <Footer/>
+        <Footer/> */}
       </Body>
     </>
   );

@@ -9,21 +9,6 @@ const Main = () => {
 
 	return(
 		<main>
-			<div className="Herosection">
-					<div className="Hero-text" >
-						<h1 className="Little-lemon">Little Lemon</h1>
-						<h2>Chicago</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur<br/>
-						adipiscing elit, sed do eiusmod tempor<br/>
-						incididunt ut labore et dolore magna<br/>aliqua.</p>
-						<div className="Hero-btn">
-							<button className="Reserve-table">Reserve a table</button>
-						</div>
-					</div>
-					<div className="Hero-image">
-						<img src={require("../Images/image12.jpg")} alt="HeroImage" width="380" height="404"  />
-					</div>
-			</div>
 			<section className="Week-Specialty">
 				<div className="Specialty-header">
 					<h1>This Week Specialty</h1>
