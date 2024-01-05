@@ -6,16 +6,16 @@
 .Herosection section {
 	color: #EDEFEE;
 	position: relative;
-	padding: 1em 14em;
+	padding: 10px 13%;
 }
 
-.Hero-text {
-	display: flexbox;
-	flex: wrap;
+h2{
+	color: #F4CE14;
+	font-size: 40px;
 }
 
-.Hero-text h2{
-	color: white;
+h3{
+	font-size: 25px;
 }
 
 .Hero-text p{
@@ -26,9 +26,7 @@
 	color: white;
 }
 
-.Little-lemon{
-	color: #F4CE14;
-}
+
 
 .Hero-image {
 	position: relative;
