@@ -18,8 +18,8 @@ const Header = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur<br/>
 					adipiscing elit, sed do eiusmod tempor<br/>
 					incididunt ut labore et dolore magna<br/>aliqua.</p>
-					<div className="Hero-btn">
-						<button className="Reserve-table">Reserve a table</button>
+					<div>
+						<link to='/booking'><button >Reserve a table</button></link>
 					</div>
 				</div>
 				<div className="Hero-image">
