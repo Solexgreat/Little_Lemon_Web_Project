@@ -1,15 +1,67 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
-import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
-import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
+// import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
+// import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 import "../style/mainstyle.css";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import Booking from './Booking';
+import { useReducer } from "react";
+import Header from "./Header";
+import ConfirmedBooking from "./confirmedBooking";
 
 
 const Main = () => {
 
+	const seedRandom = function(seed){
+		var m = 2**35 - 31;
+		var a = 185685;
+		var s = seed % m;
+
+		return function(){
+			return (s = s * a % m) /m;
+		}
+	}
+
+
+	const fetchAPI = function(date){
+		let result = []
+		let random = seedRandom(date.getDate())
+
+		for (let i = 17; i <= 23; i++ ){
+			if (random() < 0.5){
+				result.push(i + ':00')
+			}
+			if (random() > 0.5){
+				result.push(i + ':30')
+			}
+		}
+		return result;
+	}
+
+
+	const intialState = {availableTimes: fetchAPI(new Date())};
+
+	const [state, dispatch] = useReducer(updateTimes, intialState);
+
+	function updateTimes(state, date) {
+		return {availableTimes: fetchAPI(new Date())}
+	}
+
+	const submitAPI = function(formData){
+		return true;
+	}
+
+	const navigate = useNavigate();
+	function submitForm(formData){
+		if (submitAPI(formData)) {
+			navigate('/confirmed')
+		}
+	}
+
+
 	return(
 		<main>
-			<section className="Week-Specialty">
+			{/* <section className="Week-Specialty"> 
 				<div className="Specialty-header">
 					<h1>This Week Specialty</h1>
 					<button className="Online-btn">Online menu</button>
@@ -148,7 +200,14 @@ const Main = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
+			
+			<Routes>
+				<Route path="/" element={<Header/>}/>
+				<Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm} />}/>
+				<Route path="/confirmed" element={<ConfirmedBooking/>}/>
+			</Routes>
+
 		</main>
 	)
 }

@@ -1,0 +1,44 @@
+form, .confirm{
+	padding: 10px 13%;
+
+}
+
+fieldset {
+	padding: 50px 20px;
+}
+
+label, input {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+}
+
+#book-date, #book-time, #book-occasion {
+	background-color: #bdbdbd43;
+	padding: 8px 24px;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+}
+
+#book-guest {
+	background-color: #bdbdbd43;
+	padding: 8px 10px;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+}
+
+.btnReserved input{
+	padding: 12px 16px;
+	border-radius: 8px;
+	margin-top: 20px;
+	background-color:  #495e57;
+	color: white;
+	border: none;
+}
+
+.confirm, span{
+	color: blue;
+}

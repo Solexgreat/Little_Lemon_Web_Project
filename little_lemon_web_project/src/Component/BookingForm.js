@@ -1,35 +1,38 @@
 import { useState } from "react"
+import "../style/BookingForm.css"
 
 
-const BookingForm = () => {
+const BookingForm = (props) => {
 	const[date, setDate] = useState('');
 	const[time, setTime] = useState('');
 	const[guest, setGuest] = useState('');
-	const[occassion, setOccassion] = useState('');
+	const[occasion, setOccasion] = useState('');
 
 	const handelSubmit = (e) =>{
 		e.preventDefault();
+		props.submitForm(e)
 
 	}
 
 	const handleChange = (e) => {
 		setDate(e);
+		props.dispatch(e)
 	}
 	return (
 		<header>
 			<section>
-				<form onSubmit={handelSubmit}>
+				<form onSubmit={handelSubmit} className="form">
 					 <fieldset>
-						<div>
-							<label htmlFor="book-Date">Choose Date</label>
-							<input id='book-Date' value={date} onChange={(e) => handleChange(e.target.value)}
+						<div className="book-Date">
+							<label htmlFor="book-Date">Choose Date:</label>
+							<input id='book-date' value={date} onChange={(e) => handleChange(e.target.value)}
 							type="date" required/>
 						</div>
 
 						{/* for time selction */}
-						<div>
-						<label htmlFor="book-time">Choose Date</label>
-						<select value={time} onChange={(e)=> handleChange(e.target.value)}>
+						<div className="bookTime">
+						<label htmlFor="book-time">Choose Time:</label>
+						<select id='book-time' value={time} onChange={(e)=> setTime(e.target.value)}>
 							<option > Select a Time</option>
 							{
 								props.availableTimes.availableTimes.map(availableTimes => {return (
@@ -40,16 +43,24 @@ const BookingForm = () => {
 						</div>
 
 						{/* For guest Selection */}
-						<div>
-							<label htmlFor="book-guest">Number of Guest</label>
-							<input id='book-Date' value={date} onChange={(e) => handleChange(e.target.value)}
+						<div className="bookGuest">
+							<label htmlFor="book-guest">Number of Guest:</label>
+							<input id='book-guest' min='1' value={guest} onChange={(e) => setGuest(e.target.value)}
 							 required/>
 						</div>
 
 						{/* For Occasion */}
-						<div>
-							<label htmlFor="book-occasions">Select an Occasion</label>
-							<select></select>
+						<div className="bookOccasion">
+							<label htmlFor="book-occasion">Occasion: </label>
+							<select id="book-occasion" key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+								<option>Birthday</option>
+								<option>Annivasary</option>
+							</select>
+						</div>
+
+						{/* button */}
+						<div className="btnReserved">
+							<input id="btnReserved" aria-label="On click" type="submit" value={"Make Your Reservation"} />
 						</div>
 					 </fieldset>
 				</form>

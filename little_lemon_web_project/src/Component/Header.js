@@ -19,7 +19,7 @@ const Header = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur<br/>
 					adipiscing elit, sed do eiusmod tempor<br/>
 					incididunt ut labore et dolore magna<br/>aliqua.</p>
-					<Link to='/Main'><button aria-label='On Click'>Reserve a table</button></Link>
+					<Link to='/booking'><button aria-label='On Click'>Reserve a table</button></Link>
 				</div>
 				<div className="banner-image">
 					<img src={require("../Images/image12.jpg")} alt="HeroImage" width="380" height="404"  />
