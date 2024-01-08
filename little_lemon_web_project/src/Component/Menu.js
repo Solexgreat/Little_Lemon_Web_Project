@@ -12,13 +12,17 @@ const Menu = () => {
 					<button className="Online-btn">Online menu</button>
 			</div>
 			<article>
-				<div>
+				<div className='card'>
 					{recipes.map(recipe =>
-					<div className={recipe.id}>
-						<img src={recipe.img} alt=''/>
+					<div key={recipe.id} className='menu-items'>
+						<img src={recipe.image()} alt='rt'/>
 						<div>
 							<h1>{recipe.title}</h1>
+							<p>{recipe.price}</p>
+						</div>
+						<div>
 							<p>{recipe.description}</p>
+							<button className='menu-btn'>Order Now</button>
 						</div>
 					</div>
 					)}
