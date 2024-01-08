@@ -13,9 +13,15 @@ const Menu = () => {
 			</div>
 			<article>
 				<div>
-					<div>
-						{recipes.map(recipe.image)}
+					{recipes.map(recipe =>
+					<div className={recipe.id}>
+						<img src={recipe.img} alt=''/>
+						<div>
+							<h1>{recipe.title}</h1>
+							<p>{recipe.description}</p>
+						</div>
 					</div>
+					)}
 				</div>
 			</article>
 				{/* <article className="displayed-food">
