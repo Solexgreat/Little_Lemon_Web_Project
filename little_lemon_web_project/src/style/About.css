@@ -1,20 +1,33 @@
 .AboutUs{
-	padding: 40px 0px;
-	text-align: center;
+	padding: 40px 20px;
+	align-items: center;
 	background-color: white;
 }
 
 
 .About-row{
 	display: grid;
-	grid-template-columns: repeat(2, 12.5em);
+	grid-template-columns: repeat(auto-fill, 12.5em);
 	grid-gap: 7em;
-	justify-content: center;
+	padding: 10px 25%;
 }
 
-.textbox{
+.About-col-textbox {
 	text-align: left;
 }
+
+.About-col-textbox h1 {
+	color: black;
+	font-size: 40px;
+}
+
+.About-col-textbox h2 {
+	color: black;
+	font-size: 25px;
+}
+
+
+
 
 .About-col-img{
 	position: relative;
@@ -35,3 +48,9 @@
 	z-index: 9;
 }
 
+@media screen and (max-width: 760px) {
+	.About-col-img{
+		display: None;
+	}
+
+}

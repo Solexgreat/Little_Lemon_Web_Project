@@ -6,7 +6,7 @@ const About = () => {
 		<section className="AboutUs">
 					<div className="About-inner">
 						<div className="About-row">
-							<div className="About-col textbox">
+							<div className="About-col-textbox">
 								<h1>Little Lemon</h1>
 								<h2>Chicago</h2>
 								<p>Amet minim mollit non

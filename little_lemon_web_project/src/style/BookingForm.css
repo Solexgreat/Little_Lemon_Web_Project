@@ -39,6 +39,11 @@ label, input {
 	border: none;
 }
 
+.confirm {
+	margin: 10px auto;
+}
+
 .confirm, span{
 	color: blue;
+	
 }

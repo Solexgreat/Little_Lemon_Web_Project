@@ -34,8 +34,8 @@ const Footer = () => {
 					<div className="Socialmedia">
 						<ul>
 						<h2>Socialmedia Link</h2>
-							<li><a>Facebook</a></li>
-							<li><a>Instagram</a></li>
+							<li><a href='/'>Facebook</a></li>
+							<li><a  href='/'>Instagram</a></li>
 						</ul>
 					</div>
 				</div>

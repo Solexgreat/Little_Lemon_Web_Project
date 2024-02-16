@@ -8,6 +8,8 @@ const BookingForm = (props) => {
 	const[guest, setGuest] = useState('');
 	const[occasion, setOccasion] = useState('');
 
+	const isDisabled = date && time && guest && occasion;
+
 	const handelSubmit = (e) =>{
 		e.preventDefault();
 		props.submitForm(e)
@@ -35,7 +37,7 @@ const BookingForm = (props) => {
 						<select id='book-time' value={time} onChange={(e)=> setTime(e.target.value)}>
 							<option > Select a Time</option>
 							{
-								props.availableTimes.availableTimes.map(availableTimes => {return (
+								props.availableTimes.availableTime.map(availableTimes => {return (
 									<option key={availableTimes}>{availableTimes}</option>
 								)})
 							}
@@ -45,13 +47,13 @@ const BookingForm = (props) => {
 						{/* For guest Selection */}
 						<div className="bookGuest">
 							<label htmlFor="book-guest">Number of Guest:</label>
-							<input id='book-guest' min='1' value={guest} onChange={(e) => setGuest(e.target.value)}
+							<input id='book-guest' type="number" min='1' max='10' value={guest} onChange={(e) => setGuest(e.target.value)}
 							 required/>
 						</div>
 
 						{/* For Occasion */}
 						<div className="bookOccasion">
-							<label htmlFor="book-occasion">Occasion: </label>
+							<label htmlFor="book-occasion">Occasion:</label>
 							<select id="book-occasion" key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
 								<option>Birthday</option>
 								<option>Annivasary</option>
@@ -60,7 +62,7 @@ const BookingForm = (props) => {
 
 						{/* button */}
 						<div className="btnReserved">
-							<input id="btnReserved" aria-label="On click" type="submit" value={"Make Your Reservation"} />
+							<input id="btnReserved" aria-label="On click"  disabled={!isDisabled} type="submit" value={"Make Your Reservation"} />
 						</div>
 					 </fieldset>
 				</form>

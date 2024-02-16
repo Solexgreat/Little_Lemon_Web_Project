@@ -33,29 +33,3 @@
 }
 
 
-.testimonial{
-	background: #ffff;
-	padding: 30px;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.testimonial img{
-	border-radius: 50px;
-}
-
-.testimonial p{
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.name{
-	font-size: 15px;
-	text-transform: uppercase;
-}
-
-.stars{
-	color: #6ab04c;
-	margin-top: 20px;
-}
-
